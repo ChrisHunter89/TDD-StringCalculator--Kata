@@ -6,28 +6,30 @@ namespace StringCalculatorTDDKata
     [TestClass]
     public class StringCalculatorUnitTesting
     {
+        Calculator calculator;
+
         [TestMethod]
         public void GivenSingleCharString()
         {
-            Calculator calculator = new Calculator();
+            calculator = new Calculator();
             var calculationResult = calculator.CalculateStringNumbers("1");
-            Assert.AreEqual(calculationResult, 1);
+            Assert.AreEqual(1, calculationResult);
         }
 
         [TestMethod]
         public void GivenStringWith2Numbers()
         {
-            Calculator calculator = new Calculator();
+            calculator = new Calculator();
             var calculationResult = calculator.CalculateStringNumbers("1,2");
-            Assert.AreEqual(calculationResult, 2);
+            Assert.AreEqual(2, calculationResult);
         }
 
         [TestMethod]
         public void GivenStringWith3Numbers()
         {
-            Calculator calculator = new Calculator();
+            calculator = new Calculator();
             var calculatedResult = calculator.CalculateStringNumbers("1,2,3");
-            Assert.AreEqual(calculatedResult, 6);
+            Assert.AreEqual(6, calculatedResult);
         }
     }
 
