@@ -19,7 +19,7 @@ namespace StringCalculatorTDDKata
         {
             Calculator calculator = new Calculator();
             var calculationResult = calculator.Calculate("1,2");
-            Assert.AreEqual(calculationResult, 3);
+            Assert.AreEqual(calculationResult, 2);
         }
     }
 
