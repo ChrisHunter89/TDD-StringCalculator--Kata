@@ -13,6 +13,14 @@ namespace StringCalculatorTDDKata
             var calculationResult = calculator.Calculate("1");
             Assert.AreEqual(calculationResult, 1);
         }
+
+        [TestMethod]
+        public void GivenStringWith2Numbers()
+        {
+            Calculator calculator = new Calculator();
+            var calculationResult = calculator.Calculate("1,2");
+            Assert.AreEqual(calculationResult, 3);
+        }
     }
 
     public class Calculator
