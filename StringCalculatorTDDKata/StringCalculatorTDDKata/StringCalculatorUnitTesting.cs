@@ -49,10 +49,14 @@ namespace StringCalculatorTDDKata
             var numbers = value.Split(delimiters);
 
             double calculatedValue = Convert.ToDouble(numbers[0]);
+            double parsedVal;
 
             for (int i = 0; i != numbers.Length; i++)
             {
-                calculatedValue *= Convert.ToDouble(numbers[i]);
+                if (double.TryParse(numbers[i], out parsedVal))
+                {
+                    calculatedValue *= Convert.ToDouble(numbers[i]);
+                }
             }
 
             return calculatedValue;
