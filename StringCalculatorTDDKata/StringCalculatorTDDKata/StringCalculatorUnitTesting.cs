@@ -27,7 +27,17 @@ namespace StringCalculatorTDDKata
     {
         public double Calculate(string value)
         {
-            return Convert.ToDouble(value) * Convert.ToDouble(value);
+            char[] delimiters = { ',' };
+            var numbers = value.Split(delimiters);
+
+            double calculatedValue = Convert.ToDouble(numbers[0]);
+
+            for (int i = 0; i != numbers.Length; i++)
+            {
+                calculatedValue *= Convert.ToDouble(numbers[i]);
+            }
+
+            return calculatedValue;
         }
     }
 }
