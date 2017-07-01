@@ -31,6 +31,14 @@ namespace StringCalculatorTDDKata
             var calculatedResult = calculator.CalculateStringNumbers("1,2,3");
             Assert.AreEqual(6, calculatedResult);
         }
+
+        [TestMethod]
+        public void GivenAlphaNumbersAreIgnored()
+        {
+            calculator = new Calculator();
+            var calculatedResult = calculator.CalculateStringNumbers("1,2,3,Four");
+            Assert.AreEqual(6, calculatedResult);
+        }
     }
 
     public class Calculator
