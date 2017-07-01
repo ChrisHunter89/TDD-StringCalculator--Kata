@@ -19,7 +19,7 @@ namespace StringCalculatorTDDKata
     {
         public double Calculate(string value)
         {
-            return 0;
+            return Convert.ToDouble(value) * Convert.ToDouble(value);
         }
     }
 }
