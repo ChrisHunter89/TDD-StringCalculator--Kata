@@ -26,7 +26,7 @@ namespace StringCalculatorTDDKata
         public void GivenStringWith3Numbers()
         {
             Calculator calculator = new Calculator();
-            var calculatedResult = calculator.CalculateStringNumbers("1,2,Three");
+            var calculatedResult = calculator.CalculateStringNumbers("1,2,3");
             Assert.AreEqual(calculatedResult, 6);
         }
     }
