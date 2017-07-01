@@ -1,1 +1,3 @@
-# TDD StringCalculator- Kata
+# TDD StringCalculator Kata
+-------
+# First commit for string calculator kata.
