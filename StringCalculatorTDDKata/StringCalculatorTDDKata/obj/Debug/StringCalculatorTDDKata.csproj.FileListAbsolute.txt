@@ -1,0 +1,6 @@
+C:\GitHub\TDD-StringCalculator-Kata\StringCalculatorTDDKata\StringCalculatorTDDKata\bin\Debug\StringCalculatorTDDKata.dll
+C:\GitHub\TDD-StringCalculator-Kata\StringCalculatorTDDKata\StringCalculatorTDDKata\bin\Debug\StringCalculatorTDDKata.pdb
+C:\GitHub\TDD-StringCalculator-Kata\StringCalculatorTDDKata\StringCalculatorTDDKata\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\GitHub\TDD-StringCalculator-Kata\StringCalculatorTDDKata\StringCalculatorTDDKata\obj\Debug\StringCalculatorTDDKata.csprojResolveAssemblyReference.cache
+C:\GitHub\TDD-StringCalculator-Kata\StringCalculatorTDDKata\StringCalculatorTDDKata\obj\Debug\StringCalculatorTDDKata.dll
+C:\GitHub\TDD-StringCalculator-Kata\StringCalculatorTDDKata\StringCalculatorTDDKata\obj\Debug\StringCalculatorTDDKata.pdb
