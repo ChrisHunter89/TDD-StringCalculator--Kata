@@ -10,7 +10,7 @@ namespace StringCalculatorTDDKata
         public void GivenSingleCharString()
         {
             Calculator calculator = new Calculator();
-            var calculationResult = calculator.Calculate("1");
+            var calculationResult = calculator.CalculateStringNumbers("1");
             Assert.AreEqual(calculationResult, 1);
         }
 
@@ -18,14 +18,22 @@ namespace StringCalculatorTDDKata
         public void GivenStringWith2Numbers()
         {
             Calculator calculator = new Calculator();
-            var calculationResult = calculator.Calculate("1,2");
+            var calculationResult = calculator.CalculateStringNumbers("1,2");
             Assert.AreEqual(calculationResult, 2);
+        }
+
+        [TestMethod]
+        public void GivenStringWith3Numbers()
+        {
+            Calculator calculator = new Calculator();
+            var calculatedResult = calculator.CalculateStringNumbers("1,2,Three");
+            Assert.AreEqual(calculatedResult, 6);
         }
     }
 
     public class Calculator
     {
-        public double Calculate(string value)
+        public double CalculateStringNumbers(string value)
         {
             char[] delimiters = { ',' };
             var numbers = value.Split(delimiters);
